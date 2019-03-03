@@ -23,17 +23,16 @@
         arrp.push({n:"n4",a:"4",c:"c4"});
         arrp.push({n:"n5",a:"5",c:"c5"});
 
-        function sendToJava2 (obj) {
+        function sendToJava2 (n,a,c) {
          
-                javaConnector.toLowerCase(String(obj));
+                javaConnector.toLowerCase(n,a,c);
             };
             function sendToJava () {
                 var s = document.getElementById('input').value;
-                javaConnector.toLowerCase(s);
+                javaConnector.toLowerCase(s,"","");
                 for(var i in  arrp){
-    sendToJava2 (arrp[i].n); 
-    sendToJava2 (arrp[i].a); 
-    sendToJava2 (arrp[i].c); 
+    sendToJava2 (arrp[i].n,arrp[i].a,arrp[i].c); 
+  
  
 }
             }
