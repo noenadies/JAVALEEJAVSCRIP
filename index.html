@@ -14,6 +14,19 @@
         </main>
     
         <script type="text/javascript">
+
+
+        arrp=[];
+        arrp.push({n:"n1",a:"1",c:"c1"});
+        arrp.push({n:"n2",a:"2",c:"c2"});
+        arrp.push({n:"n3",a:"3",c:"c3"});
+        arrp.push({n:"n4",a:"4",c:"c4"});
+        arrp.push({n:"n5",a:"5",c:"c5"});
+
+        function sendToJava2 (obj) {
+         
+                javaConnector.toLowerCase(obj);
+            };
             function sendToJava () {
                 var s = document.getElementById('input').value;
                 javaConnector.toLowerCase(s);
@@ -29,9 +42,13 @@
                 return jsConnector;
             };
 
+for(var i in  arrp){
+    sendToJava2 (arrp[i].n); 
+    sendToJava2 (arrp[i].a); 
+    sendToJava2 (arrp[i].c); 
+}
 
 
-            
         </script>
     </body>
 </html>
