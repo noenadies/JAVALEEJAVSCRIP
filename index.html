@@ -25,7 +25,7 @@
 
         function sendToJava2 (obj) {
          
-                javaConnector.toLowerCase(obj);
+                javaConnector.toLowerCase(String(obj);
             };
             function sendToJava () {
                 var s = document.getElementById('input').value;
@@ -46,6 +46,7 @@ for(var i in  arrp){
     sendToJava2 (arrp[i].n); 
     sendToJava2 (arrp[i].a); 
     sendToJava2 (arrp[i].c); 
+    console.log(arrp[i]);
 }
 
 
